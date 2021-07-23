@@ -12,4 +12,9 @@ import lombok.Setter;
 public class User {
     private String firstname;
     private String lastname;
+
+    @Override
+    public String toString() {
+        return String.format("%s",getFirstname());
+    }
 }
